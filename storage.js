@@ -13,9 +13,9 @@ const gameComputer = {
       "description": "I love to drink coffee out of this mug it has little utters on the bottom of the mug."
 }
 
-  const watterBottle = {
+  const waterBottle = {
       "name": "nalgene",
-      "type": "diswhare",
+      "type": "dishware",
       "location": "kitchen",
       "description": "I bring this water bottle with me everywhere I go",
 }
@@ -73,14 +73,14 @@ let electronics = []
 let furniture = []
 let toy = []
 let appliance = []
-let dishWare = []
+let dishware = []
 
 electronics.push(macBook)
 electronics.push(gameComputer)
 electronics.push(television)
 toy.push(skateboard)
 dishware.push(cowMug)
-diswhare.push(waterBottle)
+dishware.push(waterBottle)
 appliance.push(frenchPress)
 appliance.push(upstairsToilet)
 furniture.push(kevinsBed)
@@ -88,11 +88,13 @@ furniture.push(doggyBed)
 
 let homeInventory = {
     "electronics": electronics,
-    "toy": crafts,
+    "toy": toy,
     "dishware": dishware,
     "appliance": appliance,
     "furniture": furniture
 }
 
-const homeInventoryString = JSON.stringify(HomeInventory)
-localStorage.setIten("homeInventory", homeInventoryString)
+let homeInventoryString = JSON.stringify(homeInventory)
+localStorage.setItem("homeInventory", homeInventoryString)
+
+
